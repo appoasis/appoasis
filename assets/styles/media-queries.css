@@ -172,6 +172,10 @@
     .informative .display {
         flex-basis: 40%;
     }
+
+    .left-nav .inner ul{
+        margin-bottom: 80px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {

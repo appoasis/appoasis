@@ -165,12 +165,11 @@ header.main ul li:hover span {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
+    background-color: rgba(37, 39, 51, 1);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .left-nav .inner {
@@ -180,7 +179,15 @@ header.main ul li:hover span {
     overflow-y: auto;
     overflow-x: hidden;
     white-space: nowrap;
-    transition: 0.5s;
+    transition: 0.7s;
+}
+
+.left-nav .inner::-webkit-scrollbar-track {
+    background-color: #252733;
+}
+
+.left-nav .inner::-webkit-scrollbar-thumb {
+    background-color: #252733;
 }
 
 .left-nav .inner .logo-container {
@@ -188,6 +195,7 @@ header.main ul li:hover span {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 70px;
 }
 
 .left-nav .inner .logo-container img {
@@ -243,7 +251,7 @@ header.main ul li:hover span {
 .informative {
     display: flex;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     padding-left: 40px;
     padding-right: 40px;
     min-height: 600px;
@@ -972,6 +980,7 @@ header.main ul li:hover span {
     font-size: 1.2rem;
     color: rgb(179, 196, 250);
     cursor: pointer;
+    user-select: text !important;
 }
 
 footer.main {

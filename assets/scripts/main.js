@@ -1,3 +1,30 @@
+let language = localStorage.getItem("language") || "En";
+const allLangs = ['En', 'Fr', 'Ar'];
+
+allLangs.forEach(lang => {
+    const langClass = Array.from(document.getElementsByClassName('lang' + lang));
+    langClass.forEach(element => {
+        if (language === lang) {
+            // Check if the element is using flex or block display
+            const computedStyle = window.getComputedStyle(element);
+            const displayStyle = computedStyle.getPropertyValue('display');
+
+            if (displayStyle === 'flex') {
+                element.style.display = 'flex';
+            } else {
+                element.style.display = 'block';
+            }
+        } else {
+            element.style.display = 'none';
+        }
+    });
+});
+
+function changeLang(lang){
+    localStorage.setItem("language",lang);
+    window.location.reload();
+}
+
 const menu = document.getElementById('menu');
 const mainLeftNav = document.getElementById('main-left-nav');
 const mainLoader = document.getElementById('main-loader');
@@ -91,24 +118,36 @@ observer.observe(document.getElementById('main-contact'));
 document.getElementById('main-informative').style.opacity = '1';
 document.getElementById('main-showcase').style.opacity = '1';
 
-function sendProjectRequestMessage(){
-    var phoneNumber = "+212 600000000"; 
-    var message = "Hi, I would like to request a project for me, let's talk in details.";
+function contactWhatsapp() {
+    var phoneNumber = "+212 675-292841";
+    var message = "Hi!";
 
     var encodedMessage = encodeURIComponent(message);
-    
+
     var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
-    
+
     window.open(whatsappURL, '_blank');
 }
 
-function sendCourseRequestMessage(){
-    var phoneNumber = "+212 600000000"; 
+
+function sendProjectRequestMessage() {
+    var phoneNumber = "+212 675-292841";
+    var message = "Hi, I would like to request a project for me, let's talk in details.";
+
+    var encodedMessage = encodeURIComponent(message);
+
+    var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+
+    window.open(whatsappURL, '_blank');
+}
+
+function sendCourseRequestMessage() {
+    var phoneNumber = "+212 675-292841";
     var message = "Hi, I would like to request a course for me, let's talk in details.";
 
     var encodedMessage = encodeURIComponent(message);
-    
+
     var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
-    
+
     window.open(whatsappURL, '_blank');
 }
