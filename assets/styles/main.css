@@ -337,9 +337,7 @@ header.main ul li:hover span {
     position: absolute;
     transform: translate(-50%, -50%);
     background-color: white;
-    border: 0px solid royalblue;
     box-shadow: rgba(0, 0, 0, 0.1) 20px 20px 20px;
-    border: 1px solid #888;
     display: grid;
     place-items: center;
     overflow: unset;
