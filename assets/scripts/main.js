@@ -90,7 +90,7 @@ function handleAnimation(entries, observer) {
                 setTimeout(() => {
                     child.classList.add('animate');
                 }, interval);
-                interval += 40;
+                interval += 20;
             });
             //observer.unobserve(entry.target);
         }
