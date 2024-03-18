@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppOasis</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/media-queries.css">
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <div id="main-wrapper" class="wrapper">
+        <!-- Main Header -->
+        <header class="main">
+            <img id="menu" src="assets/icons/menu.png" alt="Menu">
+
+            <div class="logo-container">
+                <img src="assets/icons/logo.png" alt="Logo">
+                <h1>AppOasis</h1>
+            </div>
+
+            <ul>
+                <li class="langEn"><span></span><a href="index.html#main-informative">Home</a></li>
+                <li class="langFr"><span></span><a href="index.html#main-informative">Accueil</a></li>
+                <li class="langAr"><span></span><a href="index.html#main-informative">الصفحة الرئيسية</a></li>
+
+                <li class="langEn"><span></span><a href="index.html#main-showcase">My Services</a></li>
+                <li class="langFr"><span></span><a href="index.html#main-showcase">Mes Services</a></li>
+                <li class="langAr"><span></span><a href="index.html#main-showcase">خدماتي</a></li>
+
+                <li class="langEn"><span></span><a href="index.html#main-pricing">Pricing</a></li>
+                <li class="langFr"><span></span><a href="index.html#main-pricing">Tarification</a></li>
+                <li class="langAr"><span></span><a href="index.html#main-pricing">الدفع</a></li>
+
+                <li class="langEn"><span></span><a href="index.html#main-skills">Skills</a></li>
+                <li class="langFr"><span></span><a href="index.html#main-skills">Compétences</a></li>
+                <li class="langAr"><span></span><a href="index.html#main-skills">مهارات</a></li>
+
+                <li class="langEn"><span></span><a href="index.html#main-samples">Samples</a></li>
+                <li class="langFr"><span></span><a href="index.html#main-samples">Exemples</a></li>
+                <li class="langAr"><span></span><a href="index.html#main-samples">أمثلة</a></li>
+
+                <div id="nav-contact-me">
+                    <li class="langEn"><span></span><a href="index.html#main-contact">Contact Me</a></li>
+                    <li class="langFr"><span></span><a href="index.html#main-contact">Contactez-moi</a></li>
+                    <li class="langAr"><span></span><a href="index.html#main-contact">اتصل بي</a></li>
+                </div>
+            </ul>
+
+            <button id="header-contact-me" class="btn-primary" onclick="window.location.href='index.html#main-contact'">
+                <span class="langEn">Contact Me</span>
+                <span class="langFr">Contactez-moi</span>
+                <span class="langAr">اتصل بي</span>
+            </button>
+
+            <!-- Left Nav Container -->
+            <div id="main-left-nav" class="left-nav">
+                <div class="inner">
+                    <div class="logo-container">
+                        <img src="assets/icons/logo.png" alt="Logo">
+                        <h2>AppOasis</h2>
+                    </div>
+
+                    <ul>
+                        <li class="langEn" onclick="closeLeftNav(); window.location.href='index.html#main-informative'">
+                            <span></span>Home
+                        </li>
+                        <li class="langEn" onclick="closeLeftNav(); window.location.href='index.html#main-showcase'">
+                            <span></span>My Services
+                        </li>
+                        <li class="langEn" onclick="closeLeftNav(); window.location.href='index.html#main-pricing'">
+                            <span></span>Pricing
+                        </li>
+                        <li class="langEn" onclick="closeLeftNav(); window.location.href='index.html#main-skills'">
+                            <span></span>Skills
+                        </li>
+                        <li class="langEn" onclick="closeLeftNav(); window.location.href='index.html#main-samples'">
+                            <span></span>Samples
+                        </li>
+                        <li class="langEn" onclick="closeLeftNav(); window.location.href='index.html#main-contact'">
+                            <span></span>Contact Me
+                        </li>
+
+                        <li class="langFr" onclick="closeLeftNav(); window.location.href='index.html#main-informative'">
+                            <span></span>Accueil
+                        </li>
+                        <li class="langFr" onclick="closeLeftNav(); window.location.href='index.html#main-showcase'">
+                            <span></span>Mes Services
+                        </li>
+                        <li class="langFr" onclick="closeLeftNav(); window.location.href='index.html#main-pricing'">
+                            <span></span>Tarification
+                        </li>
+                        <li class="langFr" onclick="closeLeftNav(); window.location.href='index.html#main-skills'">
+                            <span></span>Compétences
+                        </li>
+                        <li class="langFr" onclick="closeLeftNav(); window.location.href='index.html#main-samples'">
+                            <span></span>Exemples
+                        </li>
+                        <li class="langFr" onclick="closeLeftNav(); window.location.href='index.html#main-contact'">
+                            <span></span>Contactez-moi
+                        </li>
+
+                        <li class="langAr" onclick="closeLeftNav(); window.location.href='index.html#main-informative'">
+                            <span></span>الصفحة الرئيسية
+                        </li>
+                        <li class="langAr" onclick="closeLeftNav(); window.location.href='index.html#main-showcase'">
+                            <span></span>خدماتي
+                        </li>
+                        <li class="langAr" onclick="closeLeftNav(); window.location.href='index.html#main-pricing'">
+                            <span></span>الدفع
+                        </li>
+                        <li class="langAr" onclick="closeLeftNav(); window.location.href='index.html#main-skills'">
+                            <span></span>مهارات
+                        </li>
+                        <li class="langAr" onclick="closeLeftNav(); window.location.href='index.html#main-samples'">
+                            <span></span>أمثلة
+                        </li>
+                        <li class="langAr" onclick="closeLeftNav(); window.location.href='index.html#main-contact'">
+                            <span></span>اتصل بي
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Left Nav Container -->
+        </header>
+        <!-- End Main Header -->
+
+        <!-- Main Section -->
+        <main>
+            <!-- Informative Section -->
+            <section id="main-informative" class="informative"
+                style="min-height: initial; padding-top: 80px; padding-bottom: 80px;">
+                <div class="background-img">
+                    <img class="lazy-load" src="assets/images/thumbnail.PNG" data-src="assets/images/wallpaper4.PNG"
+                        alt="Background Image">
+                </div>
+
+                <div class="content" style="flex: 1;">
+                    <h2 id="header-title">
+                        <span class="langEn">Cancellation and Refund Policy</span>
+                        <span class="langFr">Politique d'Annulation et de Remboursement</span>
+                        <span class="langAr">سياسة الإلغاء والاسترداد</span>
+                    </h2>
+
+                    <p id="header-summary">
+                        <span class="langEn">
+                            I have established a fair cancellation and refund policy to ensure transparency and quality
+                            in the services I provide. While I generally do not offer refunds after the delivery of a
+                            project or service, I understand that circumstances may change. I encourage open
+                            communication and will consider exceptional cases for refunds or adjustments.
+                            <br><br>
+                            Additionally, I am committed to providing ongoing support and updates for all projects or
+                            services provided. I value my clients' satisfaction and am open to discussing any concerns
+                            or additional requirements even after the completion of a project. My goal is to build
+                            long-term relationships based on trust and mutual understanding.
+                        </span>
+                        <span class="langFr">
+                            J'ai mis en place une politique d'annulation et de remboursement équitable pour garantir la
+                            transparence et la qualité des services que je propose. Bien que je ne propose généralement
+                            pas de remboursements après la livraison d'un projet ou d'un service, je comprends que les
+                            circonstances peuvent changer. J'encourage la communication ouverte et examinerai les cas
+                            exceptionnels pour les remboursements ou ajustements.
+                            <br><br>
+                            De plus, je m'engage à fournir un support continu et des mises à jour pour tous les projets
+                            ou services fournis. Je attache une grande importance à la satisfaction de mes clients et je
+                            suis ouvert à discuter de toute préoccupation ou exigence supplémentaire même après
+                            l'achèvement d'un projet. Mon objectif est de construire des relations à long terme basées
+                            sur la confiance et la compréhension mutuelle.
+                        </span>
+                        <span class="langAr">
+                            لقد وضعت سياسة إلغاء واسترداد عادلة لضمان الشفافية والجودة في الخدمات التي أقدمها. على الرغم
+                            من أنني عمومًا لا أقدم استردادات بعد تسليم مشروع أو خدمة، إلا أنني أفهم أن الظروف قد تتغير.
+                            أشجع على التواصل المفتوح وسأنظر في الحالات الاستثنائية للاستردادات أو التعديلات.
+                            <br><br>
+                            بالإضافة إلى ذلك، أنا ملتزم بتقديم الدعم المستمر والتحديثات لجميع المشاريع أو الخدمات
+                            المقدمة. أنا أقدر رضا عملائي وأنا مستعد لمناقشة أي مخاوف أو متطلبات إضافية حتى بعد اكتمال
+                            مشروع. هدفي هو بناء علاقات طويلة الأمد تقوم على الثقة والتفاهم المتبادل.
+                        </span>
+                    </p>
+                </div>
+            </section>
+            <!-- End Informative Section -->
+        </main>
+        <!-- End Main Section -->
+
+        <!-- Main Footer Section -->
+        <footer class="main">
+            <div class="inner">
+                <div class="langEn">
+                    <h2>Terms &amp; Services</h2>
+
+                    <ul>
+                        <li><span></span><a href="payment-terms.html">Payment Terms</a></li>
+                        <li><span></span><a href="service-agreement.html">Project &amp; Service Agreement</a></li>
+                        <li><span></span><a href="refund-policy.html">Cancellation and Refund Policy</a></li>
+                        <li><span></span><a href="property-rights.html">Intellectual Property Rights</a></li>
+                        <li><span></span><a href="confidentiality.html">Confidentiality Agreement</a></li>
+                        <li><span></span><a href="communication-policy.html">Communication Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="langEn">
+                    <h2>Website Navigation</h2>
+
+                    <ul>
+                        <li><span></span><a href="#main-informative">Home</a></li>
+                        <li><span></span><a href="#main-showcase">My Services</a></li>
+                        <li><span></span><a href="#main-pricing">Pricing</a></li>
+                        <li><span></span><a href="#main-skills">Skills</a></li>
+                        <li><span></span><a href="#main-samples">Samples</a></li>
+                        <li><span></span><a href="#main-contact">Contact Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="langEn">
+                    <h2>Language</h2>
+
+                    <div class="flexbox">
+                        <button style="display: none;" onclick="changeLang('Ar')">Arabic</button>
+                        <button onclick="changeLang('En')">English</button>
+                        <button onclick="changeLang('Fr')">French</button>
+                    </div>
+
+                    <div class="logo-container">
+                        <img src="assets/icons/logo.png" alt="Logo">
+                        <h2>AppOasis</h2>
+                    </div>
+                </div>
+
+                <div class="langAr">
+                    <h2>شروط الخدمة</h2>
+                    <ul>
+                        <li><span></span><a href="payment-terms.html">شروط الدفع</a></li>
+                        <li><span></span><a href="service-agreement.html">اتفاقية المشروع والخدمة</a></li>
+                        <li><span></span><a href="refund-policy.html">سياسة الإلغاء والاسترداد</a></li>
+                        <li><span></span><a href="property-rights.html">حقوق الملكية الفكرية</a></li>
+                        <li><span></span><a href="confidentiality.html">اتفاقية السرية</a></li>
+                        <li><span></span><a href="communication-policy.html">سياسة الاتصال</a></li>
+                    </ul>
+                </div>
+
+                <div class="langAr">
+                    <h2>تصفح الموقع</h2>
+                    <ul>
+                        <li><span></span><a href="#main-informative">الرئيسية</a></li>
+                        <li><span></span><a href="#main-showcase">خدماتي</a></li>
+                        <li><span></span><a href="#main-pricing">التسعير</a></li>
+                        <li><span></span><a href="#main-skills">المهارات</a></li>
+                        <li><span></span><a href="#main-samples">العينات</a></li>
+                        <li><span></span><a href="#main-contact">اتصل بي</a></li>
+                    </ul>
+                </div>
+
+                <div class="langAr">
+                    <h2>اللغة</h2>
+                    <div class="flexbox">
+                        <button style="display: none;" onclick="changeLang('Ar')">العربية</button>
+                        <button onclick="changeLang('En')">English</button>
+                        <button onclick="changeLang('Fr')">Français</button>
+                    </div>
+                    <div class="logo-container">
+                        <img src="assets/icons/logo.png" alt="Logo">
+                        <h2>AppOasis</h2>
+                    </div>
+                </div>
+
+                <div class="langFr">
+                    <h2>Conditions &amp; Services</h2>
+                    <ul>
+                        <li><span></span><a href="payment-terms.html">Modalités de paiement</a></li>
+                        <li><span></span><a href="service-agreement.html">Accord de projet et de service</a></li>
+                        <li><span></span><a href="refund-policy.html">Politique d'annulation et de remboursement</a>
+                        </li>
+                        <li><span></span><a href="property-rights.html">Droits de propriété intellectuelle</a></li>
+                        <li><span></span><a href="confidentiality.html">Accord de confidentialité</a></li>
+                        <li><span></span><a href="communication-policy.html">Politique de communication</a></li>
+                    </ul>
+                </div>
+
+                <div class="langFr">
+                    <h2>Navigation du Site</h2>
+                    <ul>
+                        <li><span></span><a href="#main-informative">Accueil</a></li>
+                        <li><span></span><a href="#main-showcase">Mes Services</a></li>
+                        <li><span></span><a href="#main-pricing">Tarification</a></li>
+                        <li><span></span><a href="#main-skills">Compétences</a></li>
+                        <li><span></span><a href="#main-samples">Exemples</a></li>
+                        <li><span></span><a href="#main-contact">Contactez-moi</a></li>
+                    </ul>
+                </div>
+
+                <div class="langFr">
+                    <h2>Langue</h2>
+                    <div class="flexbox">
+                        <button style="display: none;" onclick="changeLang('Ar')">Arabic</button>
+                        <button onclick="changeLang('En')">English</button>
+                        <button onclick="changeLang('Fr')">Français</button>
+                    </div>
+                    <div class="logo-container">
+                        <img src="assets/icons/logo.png" alt="Logo">
+                        <h2>AppOasis</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Main Footer Section -->
+    </div>
+    <!-- End Main Wrapper -->
+
+    <!-- Scripts -->
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
